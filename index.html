@@ -66,7 +66,7 @@
         header {
             position: sticky;
             top: 0;
-            background-color: rgba(11, 12, 16, 0.85);
+            background-color: rgba(11, 12, 16, 0.92);
             backdrop-filter: blur(12px);
             border-bottom: 1px solid var(--surface-border);
             z-index: 50;
@@ -122,6 +122,27 @@
         nav a:hover {
             color: var(--accent-color);
             text-decoration: none;
+        }
+
+        /* Menu Burger Mobile (Masqué sur PC) */
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 30px;
+            height: 22px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            z-index: 100;
+        }
+
+        .menu-toggle span {
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: var(--text-primary);
+            transition: all 0.3s ease;
         }
 
         /* Main layout & Sections */
@@ -331,9 +352,57 @@
             font-weight: 500;
         }
 
+        /* RESPONSIVE MOBILE */
         @media (max-width: 768px) {
+            header {
+                padding: 1rem 1.2rem;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
             nav {
                 display: none;
+                width: 100%;
+                flex-direction: column;
+                gap: 1rem;
+                padding-top: 1.5rem;
+                border-top: 1px solid var(--surface-border);
+                margin-top: 1rem;
+            }
+
+            nav.is-open {
+                display: flex;
+            }
+
+            main {
+                padding: 0 1.2rem;
+            }
+
+            section {
+                padding: 4rem 0;
+            }
+
+            h1 {
+                font-size: 2.4rem;
+            }
+
+            h2 {
+                font-size: 1.8rem;
+            }
+
+            article {
+                padding: 1.5rem;
+            }
+
+            /* Adaptation de la frise sur petits écrans pour éviter les débordements */
+            .timeline {
+                padding-left: 1.5rem;
+            }
+
+            .timeline-item::before {
+                left: calc(-1.5rem - 6px);
             }
         }
     </style>
@@ -349,6 +418,13 @@
         <span>MAXENCE VINCENT</span>
       </a>
 
+      <!-- Bouton Menu Mobile (Hamburger) -->
+      <button class="menu-toggle" aria-expanded="false" aria-label="Ouvrir le menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
       <nav aria-label="Navigation principale">
         <a href="#accueil">Accueil</a>
         <a href="#motivations">Motivations</a>
@@ -356,7 +432,6 @@
         <a href="#expertise">Expertise</a>
         <a href="#projets">Projets</a>
         <a href="#publications">Publications</a>
-        <a href="#reflexions">Réflexions</a>
       </nav>
 
       <a href="#contact" class="btn" style="padding: 0.5rem 1.2rem; font-size: 0.85rem;">
@@ -407,7 +482,7 @@
     <section id="motivations">
       <div>
         <p style="color: var(--accent-color); font-weight: 600; text-transform: uppercase; font-size: 0.8rem; letter-spacing: 0.15em;">01 — CE QUI M'ANIME</p>
-        <h2 style="margin-top: 0.5rem;">Comprendre le monde.<br><em>Participer à des projets industiels concrets</em></h2>
+        <h2 style="margin-top: 0.5rem;">Comprendre le monde.<br><em>Participer à des projets industriels concrets</em></h2>
         
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2.5rem; margin-top: 2.5rem;">
           <article>
@@ -415,7 +490,7 @@
             <p>La recherche m'a appris à aborder un problème avec méthode : formuler des hypothèses, concevoir les procédés, analyser des résultats et remettre en question les premières interprétations.</p>
           </article>
           <article>
-            <p>Je souhaite aujourd'hui mettre cette rigueur au service de projets appliqués, notamment dans les matériaux, l'énergie ou des domaines associées.</p>
+            <p>Je souhaite aujourd'hui mettre cette rigueur au service de projets appliqués, notamment dans les matériaux, l'énergie ou des domaines associés.</p>
             <p>Les technologies, la finance, l'économie et la philosophie m'intéressent également, car elles permettent d'examiner les transformations du monde sous des angles différents.</p>
           </article>
         </div>
@@ -624,6 +699,29 @@
       <a href="#accueil">Retour en haut ↑</a>
     </div>
   </footer>
+
+  <!-- Script pour faire fonctionner le menu mobile (hamburger) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const menuToggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector("header nav");
+
+      if (menuToggle && nav) {
+        menuToggle.addEventListener("click", () => {
+          const isOpen = nav.classList.toggle("is-open");
+          menuToggle.setAttribute("aria-expanded", isOpen);
+        });
+
+        // Fermer le menu automatiquement lorsqu'on clique sur un lien de navigation
+        nav.querySelectorAll("a").forEach(link => {
+          link.addEventListener("click", () => {
+            nav.classList.remove("is-open");
+            menuToggle.setAttribute("aria-expanded", "false");
+          });
+        });
+      }
+    });
+  </script>
 
 </body>
 </html>
