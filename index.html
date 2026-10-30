@@ -12,8 +12,8 @@
             --surface-border: #242a35;
             --text-primary: #f3f4f6;
             --text-secondary: #9ca3af;
-            --accent-color: #38bdf8;
-            --accent-hover: #0ea5e9;
+            --accent-color: #d4af37; /* Or / Gold */
+            --accent-hover: #f3e5ab; /* Gold clair */
             --font-main: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
         }
 
@@ -246,6 +246,35 @@
             margin-bottom: 0.5rem;
         }
 
+        /* Timeline Frise Chronologique */
+        .timeline {
+            position: relative;
+            margin-top: 3rem;
+            padding-left: 2rem;
+            border-left: 2px solid var(--surface-border);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 2.5rem;
+        }
+
+        .timeline-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: calc(-2rem - 6px);
+            top: 0.35rem;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: var(--accent-color);
+            box-shadow: 0 0 0 4px var(--bg-color);
+        }
+
         /* Footer */
         footer {
             border-top: 1px solid var(--surface-border);
@@ -362,45 +391,69 @@
       </div>
     </section>
 
-    <!-- PARCOURS -->
+    <!-- PARCOURS (FRISE CHRONOLOGIQUE) -->
     <section id="parcours">
       <div>
         <p style="color: var(--accent-color); font-weight: 600; text-transform: uppercase; font-size: 0.85rem;">02 — PARCOURS</p>
         <h2>Un parcours tourné<br><em>vers l'expérimentation.</em></h2>
 
-        <div class="grid-2">
-          <article>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; font-size: 0.85rem; color: var(--accent-color);">
-              <span>2022 — 2025</span>
-              <span>Doctorat</span>
-            </div>
-            <h3>Doctorat en chimie des matériaux</h3>
-            <p style="font-size: 0.9rem; font-weight: 500; color: var(--text-primary); margin-bottom: 1rem;">Institut Européen des Membranes · Université de Montpellier</p>
-            <p>Étude de composés Al–N–H dérivés de l'ammonia alane, dans le contexte du stockage chimique de l'hydrogène.</p>
-            <ul>
-              <li>Développement et comparaison de voies de synthèse.</li>
-              <li>Caractérisation par RMN du solide et techniques complémentaires.</li>
-              <li>Étude des gaz libérés lors du traitement thermique.</li>
-            </ul>
-            <a href="https://doi.org/10.1016/j.ijhydene.2026.154122" rel="noopener noreferrer" target="_blank">
-              Consulter une publication <span aria-hidden="true">↗</span>
-            </a>
-          </article>
+        <div class="timeline">
 
-          <article>
-            <div style="display: flex; justify-content: space-between; margin-bottom: 1rem; font-size: 0.85rem; color: var(--accent-color);">
-              <span>Avr. — sept. 2022</span>
-              <span>Stage R&D</span>
-            </div>
-            <h3>MOFs pour le stockage de l'hydrogène</h3>
-            <p style="font-size: 0.9rem; font-weight: 500; color: var(--text-primary); margin-bottom: 1rem;">CEA Grenoble</p>
-            <p>Étude de l'incorporation de nanoparticules carbonées dans des matériaux poreux de type MOF.</p>
-            <ul>
-              <li>Synthèse de MOF-5, ZIF-8 et MOF-177.</li>
-              <li>Caractérisation par BET, ATG et FTIR.</li>
-              <li>Mesures PCT pour étudier les propriétés de sorption.</li>
-            </ul>
-          </article>
+          <div class="timeline-item">
+            <article>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--accent-color); font-weight: 600;">
+                <span>2022 — 2025</span>
+                <span>Doctorat</span>
+              </div>
+              <h3>Doctorat en chimie des matériaux</h3>
+              <p style="font-size: 0.9rem; font-weight: 500; color: var(--text-primary); margin-bottom: 1rem;">Institut Européen des Membranes · Université de Montpellier</p>
+              <p>Étude de composés Al–N–H dérivés de l'ammonia alane, dans le contexte du stockage chimique de l'hydrogène. Le travail associe synthèse, caractérisation structurale et compréhension des mécanismes de thermolyse.</p>
+              <ul>
+                <li>Développement et comparaison de voies de synthèse.</li>
+                <li>Caractérisation par RMN du solide et techniques complémentaires.</li>
+                <li>Étude des gaz libérés lors du traitement thermique.</li>
+                <li>Travaux complémentaires sur des matériaux poreux AlCN pour le captage du CO₂.</li>
+              </ul>
+              <a href="https://doi.org/10.1016/j.ijhydene.2026.154122" rel="noopener noreferrer" target="_blank">
+                Consulter une publication <span aria-hidden="true">↗</span>
+              </a>
+            </article>
+          </div>
+
+          <div class="timeline-item">
+            <article>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--accent-color); font-weight: 600;">
+                <span>Avr. — sept. 2022</span>
+                <span>Stage R&D</span>
+              </div>
+              <h3>MOFs pour le stockage de l'hydrogène</h3>
+              <p style="font-size: 0.9rem; font-weight: 500; color: var(--text-primary); margin-bottom: 1rem;">CEA Grenoble</p>
+              <p>Étude de l'incorporation de nanoparticules carbonées dans des matériaux poreux de type MOF, afin d'explorer leurs propriétés d'adsorption de l'hydrogène.</p>
+              <ul>
+                <li>Synthèse de MOF-5, ZIF-8 et MOF-177.</li>
+                <li>Caractérisation par BET, ATG et FTIR.</li>
+                <li>Mesures PCT pour étudier les propriétés de sorption.</li>
+              </ul>
+            </article>
+          </div>
+
+          <div class="timeline-item">
+            <article>
+              <div style="display: flex; justify-content: space-between; margin-bottom: 0.5rem; font-size: 0.85rem; color: var(--accent-color); font-weight: 600;">
+                <span>Mars — juil. 2021</span>
+                <span>Stage recherche</span>
+              </div>
+              <h3>Chimie des matériaux</h3>
+              <p style="font-size: 0.9rem; font-weight: 500; color: var(--text-primary); margin-bottom: 1rem;">Institut Européen des Membranes · Montpellier</p>
+              <p>Étude exploratoire de la synthèse de composés aromatiques de type amine-borane, dans le contexte du stockage de l'hydrogène.</p>
+              <ul>
+                <li>Contribution à l'étude de faisabilité de la synthèse.</li>
+                <li>Caractérisation par RMN liquide du bore.</li>
+                <li>Observation de propriétés luminescentes pour certains composés.</li>
+              </ul>
+            </article>
+          </div>
+
         </div>
       </div>
     </section>
@@ -419,6 +472,7 @@
             <div class="tags">
               <span class="tag">Al–N–H</span>
               <span class="tag">MOFs</span>
+              <span class="tag">Matériaux poreux</span>
               <span class="tag">Broyage</span>
             </div>
           </article>
@@ -465,28 +519,41 @@
       </div>
     </section>
 
-    <!-- PUBLICATIONS -->
+    <!-- PUBLICATIONS (3 ARTICLES) -->
     <section id="publications">
       <div>
         <p style="color: var(--accent-color); font-weight: 600; text-transform: uppercase; font-size: 0.85rem;">05 — PUBLICATIONS</p>
         <h2>Contribuer<br><em>à la connaissance.</em></h2>
 
         <div style="display: flex; flex-direction: column; gap: 1.5rem; margin-top: 2rem;">
+
           <article>
-            <span style="font-size: 0.85rem; color: var(--accent-color);">2026 — Article scientifique · IJHE</span>
-            <h3>Al–N–H compounds derived from ammonia alane: Solid-state NMR study of dehydrogenation-induced polymeric phases</h3>
+            <span style="font-size: 0.85rem; color: var(--accent-color); font-weight: 600;">2026 — Article scientifique · IJHE</span>
+            <h3 style="margin: 0.5rem 0;">Al–N–H compounds derived from ammonia alane: Solid-state NMR study of dehydrogenation-induced polymeric phases</h3>
+            <p>Étude par RMN du solide des phases polymériques produites lors de la déshydrogénation.</p>
             <a href="https://doi.org/10.1016/j.ijhydene.2026.156928" rel="noopener noreferrer" target="_blank" style="display: inline-block; margin-top: 0.5rem;">
               Consulter le DOI <span aria-hidden="true">↗</span>
             </a>
           </article>
 
           <article>
-            <span style="font-size: 0.85rem; color: var(--accent-color);">2026 — Article scientifique · IJHE</span>
-            <h3>Al–N–H compounds derived from ammonia alane: Synthesis strategies and characterization</h3>
+            <span style="font-size: 0.85rem; color: var(--accent-color); font-weight: 600;">2026 — Article scientifique · IJHE</span>
+            <h3 style="margin: 0.5rem 0;">Al–N–H compounds derived from ammonia alane: Synthesis strategies and characterization</h3>
+            <p>Comparaison des stratégies de synthèse et caractérisation des composés dérivés de l'ammonia alane.</p>
             <a href="https://doi.org/10.1016/j.ijhydene.2026.154122" rel="noopener noreferrer" target="_blank" style="display: inline-block; margin-top: 0.5rem;">
               Consulter le DOI <span aria-hidden="true">↗</span>
             </a>
           </article>
+
+          <article>
+            <span style="font-size: 0.85rem; color: var(--accent-color); font-weight: 600;">2024 — Article de synthèse · IJHE</span>
+            <h3 style="margin: 0.5rem 0;">Exploring the potential of ammonia alane AlH₃NH₃ as hydrogen carrier</h3>
+            <p>Revue consacrée au potentiel de l'ammonia alane comme vecteur de stockage de l'hydrogène.</p>
+            <a href="https://doi.org/10.1016/j.ijhydene.2024.06.116" rel="noopener noreferrer" target="_blank" style="display: inline-block; margin-top: 0.5rem;">
+              Consulter le DOI <span aria-hidden="true">↗</span>
+            </a>
+          </article>
+
         </div>
       </div>
     </section>
@@ -507,7 +574,6 @@
 
           <article>
             <h3>LINKEDIN</h3>
-            <!-- Pensez à remplacer les points de suspension par votre lien de profil exact -->
             <a href="https://www.linkedin.com/in/maxence-vincent" rel="noopener noreferrer" target="_blank" style="display: inline-block; margin-top: 0.5rem;">
               Retrouver mon profil <span aria-hidden="true">↗</span>
             </a>
