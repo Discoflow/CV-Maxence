@@ -1781,3 +1781,82 @@ h2 em {
     transform: none;
   }
 }
+/* =========================================================
+   CORRECTIONS — ACCUEIL ET POSITIONNEMENT PROFESSIONNEL
+   ========================================================= */
+
+.hero-role {
+  max-width: 620px;
+  margin: 18px 0 20px;
+  color: var(--accent);
+  font-size: clamp(1.1rem, 2.2vw, 1.55rem);
+  font-weight: 650;
+  line-height: 1.45;
+  letter-spacing: -0.025em;
+  text-wrap: pretty;
+}
+
+.hero-description {
+  max-width: 590px;
+  line-height: 1.85;
+  text-wrap: pretty;
+}
+
+.hero-motivation {
+  max-width: 590px;
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.9;
+  text-wrap: pretty;
+}
+
+.hero-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.hero-tags span {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+
+.hero-actions .button {
+  min-height: 44px;
+}
+
+@media (max-width: 760px) {
+  .hero-role {
+    max-width: 100%;
+    font-size: 1.2rem;
+  }
+
+  .hero-description,
+  .hero-motivation {
+    max-width: 100%;
+  }
+
+  .hero-actions {
+    align-items: stretch;
+  }
+
+  .hero-actions .button {
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-role,
+  .hero-motivation {
+    scroll-behavior: auto;
+  }
+}
