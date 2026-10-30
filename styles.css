@@ -1,179 +1,1783 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="color-scheme" content="light dark">
-<meta name="author" content="Maxence Vincent">
-<meta name="description" content="Maxence Vincent, docteur en chimie des matériaux. Ingénieur R&D : caractérisation physicochimique, RMN du solide, catalyse et technologies de l’énergie.">
-<meta property="og:title" content="Maxence Vincent, ingénieur R&D matériaux">
-<meta property="og:description" content="Docteur en chimie des matériaux, spécialisé en RMN du solide et stockage de l’hydrogène.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://discoflow.github.io/CV-Maxence/">
-<title>Maxence Vincent, ingénieur R&D | Matériaux, RMN du solide, hydrogène</title>
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Hanken+Grotesk:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="styles.css">
-<script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
-<script src="script.js" defer></script>
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"Person","name":"Maxence Vincent","jobTitle":"Ingénieur R&D, docteur en chimie des matériaux","email":"mailto:maxence.vincentpro@outlook.com","alumniOf":["Université de Montpellier","Université Claude Bernard Lyon 1"],"knowsAbout":["RMN du solide","Stockage de l’hydrogène","Matériaux poreux","Catalyse"],"url":"https://discoflow.github.io/CV-Maxence/"}
-</script>
-</head>
-<body>
-<a class="skip" href="#contenu">Aller au contenu</a>
+/* =========================================================
+   MAXENCE VINCENT — PORTFOLIO
+   Palette : graphite / ivoire / bronze
+   ========================================================= */
 
-<header class="bar">
-  <a class="brand" href="#accueil" aria-label="Maxence Vincent, accueil">Maxence Vincent</a>
-  <nav id="nav" aria-label="Navigation principale">
-    <a href="#parcours">Parcours</a>
-    <a href="#competences">Compétences</a>
-    <a href="#projets">Projets</a>
-    <a href="#publications">Publications</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <button class="icon-btn" id="theme" type="button" aria-label="Changer de thème">◐</button>
-</header>
+:root {
+  color-scheme: dark;
 
-<main id="contenu">
-<section class="hero" id="accueil">
-  <div class="wrap">
-    <p class="role">Ingénieur R&D · docteur en chimie des matériaux</p>
-    <h1>Je regarde la matière atome par atome, pour qu’elle serve des projets concrets.</h1>
-    <p class="lead">Spécialiste de la RMN du solide et de la caractérisation physicochimique, j’ai consacré ma thèse au stockage chimique de l’hydrogène. Je cherche aujourd’hui un poste de R&D industrielle en matériaux, catalyse ou énergie.</p>
-    <p class="actions">
-      <a class="btn primary" href="#contact">Me contacter</a>
-      <a class="btn" href="#parcours">Voir mon parcours</a>
-      <button class="btn" type="button" id="print">Enregistrer en PDF</button>
-    </p>
-  </div>
-  <figure class="spectrum wrap" aria-label="Spectre schématique dont chaque pic correspond à un thème de recherche">
-    <svg id="spectrum" viewBox="0 0 1000 260" role="img" aria-label="Spectre de RMN schématique avec quatre pics : Al–N–H, hydrogène, MOF, CO₂"></svg>
-    <figcaption>Spectre schématique : chaque pic est un sujet sur lequel j’ai travaillé.</figcaption>
-  </figure>
-  <dl class="facts wrap">
-    <div><dt>Doctorat</dt><dd>2022–2025</dd></div>
-    <div><dt>Publications</dt><dd>3 articles (IJHE)</dd></div>
-    <div><dt>Stages</dt><dd>CEA Grenoble, IEM</dd></div>
-    <div><dt>Langues</dt><dd>Français, anglais C1</dd></div>
-  </dl>
-</section>
+  --bg: #151617;
+  --surface: #1c1e20;
+  --surface-alt: #222321;
+  --surface-soft: #29261f;
 
-<section class="wrap block" id="profil">
-  <h2>Ce qui m’anime</h2>
-  <div class="cols">
-    <p>La recherche m’a appris une méthode : poser une hypothèse, concevoir l’expérience, interpréter les résultats et remettre en question la première lecture quand les données l’exigent.</p>
-    <p>Je veux mettre cette rigueur au service de projets appliqués, avec les équipes de recherche, d’ingénierie et de développement. Je m’intéresse aussi à la finance, à l’économie et à la philosophie, qui offrent d’autres angles pour comprendre les transformations du monde.</p>
-  </div>
-</section>
+  --text: #eeeae2;
+  --text-soft: #d0cbc1;
+  --muted: #aaa69e;
+  --quiet: #85837d;
 
-<section class="wrap block" id="parcours">
-  <h2>Parcours</h2>
-  <ol class="timeline">
-    <li>
-      <time>2022 – 2025</time>
-      <details open>
-        <summary><strong>Doctorat en chimie des matériaux</strong><span>Institut Européen des Membranes, Université de Montpellier</span></summary>
-        <p>Étude de composés Al–N–H dérivés de l’ammonia alane pour le stockage chimique de l’hydrogène : synthèse, caractérisation structurale et mécanismes de thermolyse.</p>
-        <ul>
-          <li>Développement et comparaison de voies de synthèse.</li>
-          <li>Caractérisation par RMN du solide et techniques complémentaires.</li>
-          <li>Analyse des gaz libérés lors du traitement thermique.</li>
-          <li>Travaux sur des matériaux poreux AlCN pour le captage du CO₂.</li>
-        </ul>
-      </details>
-    </li>
-    <li>
-      <time>avr. – sept. 2022</time>
-      <details>
-        <summary><strong>Stage R&D : MOFs pour le stockage de l’hydrogène</strong><span>CEA Grenoble</span></summary>
-        <p>Incorporation de nanoparticules carbonées dans des MOFs pour explorer leurs propriétés d’adsorption de l’hydrogène.</p>
-        <ul>
-          <li>Synthèse de MOF-5, ZIF-8 et MOF-177.</li>
-          <li>Caractérisation par BET, ATG et FTIR.</li>
-          <li>Mesures PCT des propriétés de sorption.</li>
-        </ul>
-      </details>
-    </li>
-    <li>
-      <time>mars – juil. 2021</time>
-      <details>
-        <summary><strong>Stage de recherche : amine-boranes aromatiques</strong><span>Institut Européen des Membranes, Montpellier</span></summary>
-        <p>Étude exploratoire de la synthèse de composés amine-borane aromatiques pour le stockage de l’hydrogène.</p>
-        <ul>
-          <li>Contribution à l’étude de faisabilité de la synthèse.</li>
-          <li>Caractérisation par RMN liquide du bore.</li>
-          <li>Observation de propriétés luminescentes pour certains composés.</li>
-        </ul>
-      </details>
-    </li>
-  </ol>
-  <h3>Formation</h3>
-  <ul class="edu">
-    <li><time>2022 – 2025</time><strong>Doctorat, chimie des matériaux</strong>Université de Montpellier</li>
-    <li><time>2020 – 2022</time><strong>Master, chimie et sciences des matériaux</strong>Université Claude Bernard Lyon 1</li>
-    <li><time>2017 – 2020</time><strong>Licence de chimie</strong>Université de Montpellier</li>
-  </ul>
-</section>
+  --accent: #c1a47b;
+  --accent-hover: #ddc49f;
+  --accent-dark: #a88a60;
 
-<section class="wrap block" id="competences">
-  <h2>Compétences</h2>
-  <dl class="skills">
-    <div><dt>Synthèse</dt><dd>Al–N–H, MOFs, matériaux poreux, AlCN, broyage, métathèse</dd></div>
-    <div><dt>RMN du solide</dt><dd>MAS, MQMAS, HETCOR, REDOR, traitement avec DMFIT</dd></div>
-    <div><dt>Caractérisation</dt><dd>DRX, XPS, FTIR, MEB-EDX, BET, ATG-MS, GC-MS, PCT</dd></div>
-    <div><dt>Énergie et catalyse</dt><dd>Stockage de H₂, thermolyse, captage du CO₂, mécanismes réactionnels</dd></div>
-    <div><dt>Analyse et communication</dt><dd>Interprétation de données, rédaction d’articles, présentation de résultats</dd></div>
-  </dl>
-</section>
+  --border: #303234;
+  --border-light: #454648;
 
-<section class="wrap block" id="projets">
-  <h2>Projets</h2>
-  <div class="projects">
-    <article>
-      <h3>Stockage chimique de l’hydrogène</h3>
-      <p>Synthèse, RMN du solide et thermolyse de composés Al–N–H dérivés de l’ammonia alane.</p>
-      <a href="https://doi.org/10.1016/j.ijhydene.2026.154122" target="_blank" rel="noopener noreferrer">Lire l’article</a>
-    </article>
-    <article>
-      <h3>MOFs et adsorption de l’hydrogène</h3>
-      <p>Effet de nanoparticules carbonées sur les propriétés de sorption de matériaux poreux.</p>
-    </article>
-    <article>
-      <h3>Outils d’analyse financière</h3>
-      <p>Projet personnel en cours : outils Python de visualisation et d’exploration de stratégies quantitatives.</p>
-    </article>
-  </div>
-</section>
+  --container: 1120px;
+  --radius: 5px;
 
-<section class="wrap block" id="publications">
-  <h2>Publications</h2>
-  <ol class="pubs">
-    <li><time>2026</time><a href="https://doi.org/10.1016/j.ijhydene.2026.156928" target="_blank" rel="noopener noreferrer">Al–N–H compounds derived from ammonia alane: Solid-state NMR study of dehydrogenation-induced polymeric phases</a><span>Int. J. Hydrogen Energy</span></li>
-    <li><time>2026</time><a href="https://doi.org/10.1016/j.ijhydene.2026.154122" target="_blank" rel="noopener noreferrer">Al–N–H compounds derived from ammonia alane: Synthesis strategies and characterization</a><span>Int. J. Hydrogen Energy</span></li>
-    <li><time>2024</time><a href="https://doi.org/10.1016/j.ijhydene.2024.06.116" target="_blank" rel="noopener noreferrer">Exploring the potential of ammonia alane AlH₃NH₃ as hydrogen carrier</a><span>Int. J. Hydrogen Energy, revue</span></li>
-  </ol>
-</section>
+  --font: Inter, "Segoe UI", Helvetica, Arial, sans-serif;
 
-<section class="wrap block contact" id="contact">
-  <h2>Parlons de votre projet</h2>
-  <p>Je suis ouvert aux échanges sur la chimie des matériaux, la recherche appliquée et l’énergie.</p>
-  <p><a class="mail" href="mailto:maxence.vincentpro@outlook.com">maxence.vincentpro@outlook.com</a> · <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
-  <form id="form">
-    <label>Votre nom<input name="name" autocomplete="name" required></label>
-    <label>Votre e-mail<input name="email" type="email" autocomplete="email" required></label>
-    <label>Votre message<textarea name="message" rows="4" required></textarea></label>
-    <button class="btn primary" type="submit">Ouvrir dans ma messagerie</button>
-    <p class="note" id="status" aria-live="polite">Le message s’ouvre dans votre logiciel de messagerie ; rien n’est envoyé depuis le site.</p>
-  </form>
-</section>
-</main>
+  --ease: cubic-bezier(.2, .7, .25, 1);
+}
 
-<footer class="wrap foot">
-  <span>© <span id="year">2026</span> Maxence Vincent</span>
-  <a href="#accueil">Haut de page</a>
-</footer>
-</body>
-</html>
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 95px;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font);
+  font-size: 16px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+body.menu-open {
+  overflow: hidden;
+}
+
+::selection {
+  color: var(--bg);
+  background: var(--accent);
+}
+
+a {
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
+svg {
+  display: block;
+}
+
+.container {
+  width: min(calc(100% - 64px), var(--container));
+  margin-inline: auto;
+}
+
+.section {
+  padding: 112px 0;
+}
+
+.section-anchor {
+  scroll-margin-top: 85px;
+}
+
+.skip-link {
+  position: fixed;
+  z-index: 9999;
+  top: 10px;
+  left: 10px;
+  padding: 10px 15px;
+  transform: translateY(-150%);
+  background: var(--accent);
+  color: var(--bg);
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+
+/* =========================================================
+   TYPOGRAPHIE
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+h1,
+h2 {
+  font-weight: 550;
+  letter-spacing: -.065em;
+}
+
+h2 {
+  margin-bottom: 0;
+  font-size: clamp(2.7rem, 5.5vw, 4.7rem);
+  line-height: 1.04;
+}
+
+h2 em {
+  color: var(--accent);
+  font-style: normal;
+}
+
+.eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px;
+  color: var(--accent);
+  font-size: .69rem;
+  font-weight: 700;
+  letter-spacing: .13em;
+  line-height: 1.5;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.section-heading {
+  margin-bottom: 48px;
+}
+
+.section-heading-row {
+  display: grid;
+  grid-template-columns: 1.1fr .7fr;
+  align-items: end;
+  gap: 60px;
+}
+
+.section-intro {
+  max-width: 420px;
+  margin-bottom: 4px;
+  color: var(--muted);
+  font-size: .94rem;
+  line-height: 1.9;
+}
+
+
+/* =========================================================
+   BOUTONS
+   ========================================================= */
+
+.button {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 12px 18px;
+  border: 1px solid var(--border-light);
+  border-radius: 3px;
+  font-size: .79rem;
+  font-weight: 650;
+  text-decoration: none;
+  cursor: pointer;
+  transition:
+    background .25s ease,
+    border-color .25s ease,
+    color .25s ease,
+    transform .25s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+}
+
+.button-primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #171717;
+}
+
+.button-primary:hover {
+  border-color: var(--accent-hover);
+  background: var(--accent-hover);
+  color: #171717;
+}
+
+.button-secondary {
+  background: transparent;
+  color: var(--text);
+}
+
+.button-secondary:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+
+/* =========================================================
+   HEADER & NAVIGATION
+   ========================================================= */
+
+.site-header {
+  position: sticky;
+  z-index: 1000;
+  top: 0;
+  border-bottom: 1px solid rgba(238, 234, 226, .08);
+  background: rgba(21, 22, 23, .94);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.header-inner {
+  display: flex;
+  min-height: 76px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.brand {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 11px;
+  text-decoration: none;
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: baseline;
+  font-size: 1.55rem;
+  font-weight: 750;
+  letter-spacing: -.12em;
+}
+
+.brand-mark span {
+  color: var(--accent);
+}
+
+.brand-label {
+  color: var(--muted);
+  font-size: .61rem;
+  font-weight: 700;
+  letter-spacing: .12em;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  gap: clamp(12px, 1.6vw, 24px);
+}
+
+.main-nav a,
+.header-contact {
+  color: var(--muted);
+  font-size: .69rem;
+  font-weight: 550;
+  text-decoration: none;
+  transition: color .2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a.active,
+.header-contact:hover {
+  color: var(--accent);
+}
+
+.header-contact {
+  flex-shrink: 0;
+}
+
+.header-contact span {
+  margin-left: 5px;
+  color: var(--accent);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+
+/* =========================================================
+   ACCUEIL
+   ========================================================= */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.hero::before {
+  position: absolute;
+  top: -220px;
+  right: -180px;
+  width: 650px;
+  height: 650px;
+  border: 1px solid rgba(193, 164, 123, .09);
+  border-radius: 50%;
+  box-shadow:
+    0 0 0 45px rgba(193, 164, 123, .025),
+    0 0 0 90px rgba(193, 164, 123, .015);
+  content: "";
+  pointer-events: none;
+}
+
+.hero-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.1fr .75fr;
+  align-items: center;
+  gap: clamp(45px, 8vw, 105px);
+  padding-bottom: 85px;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero-intro {
+  margin-bottom: 0;
+  color: var(--muted);
+  font-size: 1rem;
+}
+
+.hero h1 {
+  margin: 0 0 15px;
+  font-size: clamp(4rem, 8vw, 7.5rem);
+  line-height: .98;
+}
+
+.hero h1 span {
+  color: var(--accent);
+}
+
+.hero-role {
+  margin-bottom: 23px;
+  color: var(--text-soft);
+  font-size: clamp(1.05rem, 2vw, 1.35rem);
+  font-weight: 500;
+}
+
+.hero-description {
+  max-width: 600px;
+  margin-bottom: 25px;
+  color: var(--muted);
+  font-size: .93rem;
+  line-height: 1.95;
+}
+
+.hero-tags,
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.hero-tags {
+  margin-bottom: 32px;
+}
+
+.hero-tags span,
+.chips span {
+  padding: 6px 10px;
+  border: 1px solid var(--border-light);
+  border-radius: 2px;
+  color: var(--text-soft);
+  font-size: .66rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-visual {
+  position: relative;
+  padding: 20px;
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(193, 164, 123, .08),
+      transparent 65%
+    ),
+    var(--surface);
+}
+
+.visual-header,
+.visual-footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.visual-header {
+  color: var(--quiet);
+  font-size: .57rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+
+.visual-header span:last-child {
+  color: var(--accent);
+}
+
+.molecule-visual {
+  width: 100%;
+  margin: 30px 0;
+}
+
+.molecule-bonds {
+  fill: none;
+  stroke: #71644e;
+  stroke-width: 1.2;
+}
+
+.molecule-nodes {
+  fill: var(--surface);
+  stroke: var(--accent);
+  stroke-width: 1.5;
+}
+
+.molecule-nodes circle {
+  animation: molecule-pulse 4s ease-in-out infinite alternate;
+}
+
+.molecule-nodes circle:nth-child(3n) {
+  animation-delay: -2s;
+}
+
+@keyframes molecule-pulse {
+  from {
+    opacity: .6;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.visual-footer {
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.visual-footer > div {
+  display: grid;
+  gap: 4px;
+}
+
+.visual-label {
+  color: var(--quiet);
+  font-size: .56rem;
+  letter-spacing: .1em;
+}
+
+.visual-footer strong {
+  color: var(--text-soft);
+  font-size: .68rem;
+  font-weight: 550;
+}
+
+.hero-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 17px;
+  padding-bottom: 17px;
+  color: var(--quiet);
+  font-size: .61rem;
+  font-weight: 650;
+  letter-spacing: .1em;
+}
+
+
+/* =========================================================
+   MOTIVATIONS
+   ========================================================= */
+
+.motivations-section {
+  background: #191a1b;
+  border-bottom: 1px solid var(--border);
+}
+
+.motivations-grid {
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: clamp(50px, 9vw, 130px);
+}
+
+.motivations-grid h2 {
+  position: sticky;
+  top: 125px;
+}
+
+.motivations-content {
+  max-width: 650px;
+}
+
+.motivations-content p {
+  color: var(--muted);
+  font-size: .91rem;
+  line-height: 1.95;
+}
+
+.motivations-content .lead {
+  margin-bottom: 25px;
+  color: var(--text);
+  font-size: clamp(1.2rem, 2.3vw, 1.65rem);
+  font-weight: 550;
+  letter-spacing: -.025em;
+  line-height: 1.55;
+}
+
+.quote-card {
+  position: relative;
+  margin-top: 35px;
+  padding: 25px 25px 25px 28px;
+  border-left: 2px solid var(--accent);
+  background: var(--surface-soft);
+}
+
+.quote-mark {
+  display: block;
+  height: 35px;
+  color: var(--accent);
+  font-family: Georgia, serif;
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.quote-card p {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: .91rem;
+  font-weight: 550;
+}
+
+
+/* =========================================================
+   PARCOURS & FORMATION
+   ========================================================= */
+
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 28px;
+}
+
+.timeline::before {
+  position: absolute;
+  top: 8px;
+  bottom: 8px;
+  left: 185px;
+  width: 1px;
+  background: var(--border-light);
+  content: "";
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 155px 60px minmax(0, 1fr);
+  align-items: start;
+}
+
+.timeline-date {
+  padding-top: 25px;
+  text-align: right;
+}
+
+.timeline-date span {
+  display: block;
+}
+
+.timeline-date span:first-child {
+  color: var(--text-soft);
+  font-size: .75rem;
+  font-weight: 650;
+}
+
+.timeline-type {
+  margin-top: 5px;
+  color: var(--quiet);
+  font-size: .67rem;
+}
+
+.timeline-marker {
+  position: relative;
+  z-index: 1;
+  width: 11px;
+  height: 11px;
+  margin: 31px auto 0;
+  border: 2px solid var(--bg);
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent-dark);
+}
+
+.timeline-card {
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition:
+    border-color .25s ease,
+    transform .25s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-2px);
+  border-color: var(--border-light);
+}
+
+.card-topline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.tag,
+.card-number,
+.project-number {
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+}
+
+.tag {
+  color: var(--accent);
+  text-transform: uppercase;
+}
+
+.card-number {
+  color: var(--quiet);
+}
+
+.timeline-card h3 {
+  margin-bottom: 5px;
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 600;
+  letter-spacing: -.035em;
+  line-height: 1.4;
+}
+
+.card-meta {
+  margin-bottom: 20px;
+  color: var(--quiet);
+  font-size: .73rem;
+}
+
+.timeline-card > p:not(.card-meta) {
+  color: var(--text-soft);
+  font-size: .85rem;
+  line-height: 1.85;
+}
+
+.detail-list {
+  display: grid;
+  gap: 8px;
+  margin: 18px 0;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: .79rem;
+  line-height: 1.8;
+}
+
+.detail-list li::marker {
+  color: var(--accent);
+}
+
+.text-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--accent);
+  font-size: .75rem;
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.text-link:hover {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.education-block {
+  margin-top: 100px;
+}
+
+.education-block > h3 {
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  font-weight: 550;
+  letter-spacing: -.04em;
+}
+
+.education-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.education-card {
+  padding: 23px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.education-date {
+  display: block;
+  margin-bottom: 24px;
+  color: var(--accent);
+  font-size: .68rem;
+  font-weight: 700;
+}
+
+.education-card h4 {
+  margin-bottom: 7px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.education-card p {
+  margin-bottom: 15px;
+  color: var(--text-soft);
+  font-size: .83rem;
+}
+
+.education-place {
+  color: var(--quiet);
+  font-size: .7rem;
+}
+
+.language-line {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}
+
+.language-line span {
+  color: var(--accent);
+  font-size: .66rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+
+.language-line p {
+  margin: 0;
+  color: var(--muted);
+  font-size: .75rem;
+}
+
+
+/* =========================================================
+   EXPERTISE
+   ========================================================= */
+
+.expertise-section {
+  background: #191a1b;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.expertise-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.expertise-card {
+  padding: 30px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition:
+    transform .3s var(--ease),
+    border-color .3s ease;
+}
+
+.expertise-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-dark);
+}
+
+.expertise-index {
+  display: block;
+  margin-bottom: 35px;
+  color: var(--accent);
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+
+.expertise-card h3 {
+  margin-bottom: 12px;
+  font-size: 1.35rem;
+  font-weight: 600;
+  letter-spacing: -.035em;
+}
+
+.expertise-card p {
+  min-height: 75px;
+  margin-bottom: 20px;
+  color: var(--muted);
+  font-size: .83rem;
+  line-height: 1.85;
+}
+
+.chips span {
+  padding: 5px 9px;
+  color: var(--text-soft);
+  font-size: .64rem;
+}
+
+
+/* =========================================================
+   PROJETS
+   ========================================================= */
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.project-card {
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition:
+    transform .3s var(--ease),
+    border-color .3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--border-light);
+}
+
+.project-featured {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+}
+
+.project-visual {
+  position: relative;
+  display: grid;
+  min-height: 230px;
+  overflow: hidden;
+  place-items: center;
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(193, 164, 123, .12),
+      transparent 70%
+    ),
+    #20201e;
+}
+
+.project-featured .project-visual {
+  min-height: 350px;
+}
+
+.project-category {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: var(--accent);
+  font-size: .59rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+}
+
+.project-visual svg {
+  width: 85%;
+  max-width: 300px;
+  color: var(--accent);
+}
+
+.pore-illustration {
+  display: grid;
+  grid-template-columns: repeat(3, 38px);
+  gap: 14px;
+  transform: rotate(-10deg);
+}
+
+.pore-illustration span {
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--accent-dark);
+  border-radius: 50%;
+  background: rgba(193, 164, 123, .08);
+  box-shadow: inset 0 0 15px rgba(193, 164, 123, .06);
+}
+
+.pore-illustration span:nth-child(2n) {
+  transform: translateY(12px);
+}
+
+.digital-illustration {
+  width: 75%;
+  max-width: 240px;
+  padding: 20px;
+  border: 1px solid var(--border-light);
+  background: #191a1b;
+}
+
+.digital-line {
+  height: 5px;
+  margin-bottom: 12px;
+  background: #39362f;
+}
+
+.digital-line:nth-child(2) {
+  width: 75%;
+}
+
+.digital-line:nth-child(3) {
+  width: 45%;
+}
+
+.digital-bars {
+  display: flex;
+  height: 65px;
+  align-items: end;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.digital-bars span {
+  flex: 1;
+  height: 35%;
+  background: var(--accent-dark);
+}
+
+.digital-bars span:nth-child(2) {
+  height: 65%;
+}
+
+.digital-bars span:nth-child(3) {
+  height: 45%;
+}
+
+.digital-bars span:nth-child(4) {
+  height: 85%;
+}
+
+.digital-bars span:nth-child(5) {
+  height: 55%;
+}
+
+.digital-bars span:nth-child(6) {
+  height: 100%;
+}
+
+.project-content {
+  padding: 28px;
+}
+
+.project-number {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--accent);
+}
+
+.project-content h3 {
+  margin-bottom: 12px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: -.035em;
+  line-height: 1.4;
+}
+
+.project-content p {
+  color: var(--muted);
+  font-size: .82rem;
+  line-height: 1.85;
+}
+
+.project-content .chips {
+  margin-top: 20px;
+}
+
+.project-content .text-link {
+  margin-top: 20px;
+}
+
+.project-note {
+  margin-top: 18px;
+  font-size: .7rem !important;
+  font-style: italic;
+}
+
+.section-footnote {
+  margin: 30px 0 0;
+  color: var(--quiet);
+  font-size: .73rem;
+}
+
+
+/* =========================================================
+   PUBLICATIONS
+   ========================================================= */
+
+.publications-section {
+  background: #191a1b;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.publication-list {
+  border-top: 1px solid var(--border);
+}
+
+.publication-item {
+  display: grid;
+  grid-template-columns: 95px minmax(0, 1fr);
+  gap: 30px;
+  padding: 35px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.publication-year {
+  color: var(--accent);
+  font-size: 1.05rem;
+  font-weight: 650;
+}
+
+.publication-type {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--quiet);
+  font-size: .61rem;
+  font-weight: 700;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.publication-details h3 {
+  max-width: 800px;
+  margin-bottom: 13px;
+  font-size: clamp(1.1rem, 2.3vw, 1.55rem);
+  font-weight: 550;
+  letter-spacing: -.03em;
+  line-height: 1.55;
+}
+
+.publication-details h3 a {
+  text-decoration-color: #62543f;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+
+.publication-details h3 a:hover {
+  color: var(--accent);
+}
+
+.publication-details p {
+  margin-bottom: 15px;
+  color: var(--muted);
+  font-size: .81rem;
+  line-height: 1.8;
+}
+
+.publication-footer {
+  margin-top: 25px;
+}
+
+.publication-footer p {
+  color: var(--quiet);
+  font-size: .76rem;
+}
+
+
+/* =========================================================
+   RÉFLEXIONS
+   ========================================================= */
+
+.reflections-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 15px;
+}
+
+.reflection-card {
+  position: relative;
+  display: flex;
+  min-height: 350px;
+  flex-direction: column;
+  padding: 26px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  transition:
+    transform .3s var(--ease),
+    border-color .3s ease;
+}
+
+.reflection-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent-dark);
+}
+
+.reflection-index {
+  display: block;
+  margin-bottom: 38px;
+  color: var(--accent);
+  font-size: .78rem;
+  font-weight: 700;
+}
+
+.reflection-category {
+  display: block;
+  margin-bottom: 14px;
+  color: var(--quiet);
+  font-size: .58rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+}
+
+.reflection-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  font-weight: 550;
+  letter-spacing: -.03em;
+  line-height: 1.5;
+}
+
+.reflection-card p {
+  margin-bottom: 30px;
+  color: var(--muted);
+  font-size: .79rem;
+  line-height: 1.85;
+}
+
+.reflection-status {
+  margin-top: auto;
+  padding-top: 15px;
+  border-top: 1px solid var(--border);
+  color: var(--accent);
+  font-size: .66rem;
+  font-weight: 650;
+}
+
+.reflection-note {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 28px;
+  color: var(--muted);
+  font-size: .75rem;
+}
+
+
+/* =========================================================
+   CONTACT
+   ========================================================= */
+
+.contact-section {
+  padding: 100px 0;
+  background: #24221e;
+  border-top: 1px solid #39352e;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: clamp(45px, 9vw, 120px);
+}
+
+.contact-copy h2 {
+  margin-bottom: 25px;
+  font-size: clamp(2.8rem, 5.4vw, 4.8rem);
+}
+
+.contact-copy > p:last-child {
+  max-width: 420px;
+  color: var(--muted);
+  font-size: .88rem;
+  line-height: 1.9;
+}
+
+.contact-panel {
+  padding-top: 15px;
+}
+
+.contact-row {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 15px;
+  padding: 20px 0;
+  border-bottom: 1px solid #494238;
+}
+
+.contact-row > span {
+  color: var(--muted);
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: .09em;
+}
+
+.contact-row a {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--text);
+  font-size: .8rem;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.contact-row a span {
+  color: var(--accent);
+}
+
+.contact-row a:hover {
+  color: var(--accent);
+}
+
+.contact-form {
+  display: grid;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.contact-form label {
+  margin-top: 10px;
+  color: var(--text-soft);
+  font-size: .73rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 13px;
+  border: 1px solid #494238;
+  border-radius: 3px;
+  outline: none;
+  background: rgba(0, 0, 0, .12);
+  color: var(--text);
+  font-size: .8rem;
+  transition: border-color .2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--accent);
+}
+
+.contact-form textarea {
+  min-height: 125px;
+  resize: vertical;
+}
+
+.contact-form .button {
+  justify-self: start;
+  margin-top: 10px;
+}
+
+.form-note,
+.form-status {
+  margin: 5px 0 0;
+  color: var(--muted);
+  font-size: .68rem;
+  line-height: 1.7;
+}
+
+.form-status:empty {
+  display: none;
+}
+
+
+/* =========================================================
+   FOOTER
+   ========================================================= */
+
+.site-footer {
+  background: #121314;
+}
+
+.footer-inner {
+  display: flex;
+  min-height: 90px;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-brand {
+  font-size: 1.4rem;
+  font-weight: 750;
+  letter-spacing: -.1em;
+  text-decoration: none;
+}
+
+.footer-brand span {
+  color: var(--accent);
+}
+
+.footer-inner p {
+  margin: 0;
+  color: var(--quiet);
+  font-size: .68rem;
+}
+
+.footer-inner > a:last-child {
+  color: var(--muted);
+  font-size: .68rem;
+  text-decoration: none;
+}
+
+.footer-inner > a:last-child:hover {
+  color: var(--accent);
+}
+
+
+/* =========================================================
+   ANIMATIONS
+   ========================================================= */
+
+.js .reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity .65s ease,
+    transform .65s var(--ease);
+}
+
+.js .reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+}
+
+
+/* =========================================================
+   TABLETTES
+   ========================================================= */
+
+@media (max-width: 1050px) {
+  .container {
+    width: min(calc(100% - 48px), var(--container));
+  }
+
+  .header-inner {
+    gap: 15px;
+  }
+
+  .brand-label {
+    display: none;
+  }
+
+  .main-nav {
+    gap: 13px;
+  }
+
+  .main-nav a {
+    font-size: .65rem;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr .8fr;
+    gap: 40px;
+  }
+
+  .timeline::before {
+    left: 155px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 125px 60px minmax(0, 1fr);
+  }
+
+  .education-card {
+    padding: 18px;
+  }
+}
+
+
+/* =========================================================
+   MOBILES & PETITS ÉCRANS
+   ========================================================= */
+
+@media (max-width: 760px) {
+  html {
+    scroll-padding-top: 75px;
+  }
+
+  .container {
+    width: calc(100% - 36px);
+  }
+
+  .section {
+    padding: 75px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 32px;
+  }
+
+  .section-heading-row {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  h2 {
+    font-size: clamp(2.5rem, 10vw, 3.7rem);
+  }
+
+  /* Navigation mobile */
+
+  .header-inner {
+    min-height: 68px;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .brand-label {
+    display: inline;
+  }
+
+  .menu-toggle {
+    display: flex;
+    width: 42px;
+    height: 42px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    margin-left: auto;
+    border: 1px solid var(--border-light);
+    border-radius: 3px;
+    background: transparent;
+    cursor: pointer;
+  }
+
+  .menu-toggle span {
+    width: 17px;
+    height: 1px;
+    background: var(--text);
+    transition: transform .2s ease;
+  }
+
+  .menu-toggle[aria-expanded="true"] span:first-child {
+    transform: translateY(3.5px) rotate(45deg);
+  }
+
+  .menu-toggle[aria-expanded="true"] span:last-child {
+    transform: translateY(-3.5px) rotate(-45deg);
+  }
+
+  .header-contact {
+    display: none;
+  }
+
+  .main-nav {
+    display: none;
+    order: 3;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 10px 0 15px;
+  }
+
+  .main-nav.is-open {
+    display: flex;
+  }
+
+  .main-nav a {
+    padding: 12px 0;
+    border-top: 1px solid var(--border);
+    font-size: .82rem;
+  }
+
+  /* Accueil */
+
+  .hero {
+    padding-top: 65px;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-bottom: 55px;
+  }
+
+  .hero h1 {
+    font-size: clamp(4rem, 18vw, 6rem);
+  }
+
+  .hero-description {
+    font-size: .87rem;
+  }
+
+  .hero-visual {
+    max-width: 520px;
+  }
+
+  .hero-bottom {
+    flex-wrap: wrap;
+    font-size: .55rem;
+  }
+
+  /* Motivations */
+
+  .motivations-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .motivations-grid h2 {
+    position: static;
+  }
+
+  .motivations-content .lead {
+    font-size: 1.2rem;
+  }
+
+  /* Parcours */
+
+  .timeline {
+    gap: 20px;
+  }
+
+  .timeline::before {
+    left: 5px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 20px minmax(0, 1fr);
+  }
+
+  .timeline-date {
+    grid-column: 2;
+    grid-row: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 10px;
+    padding: 0 0 12px;
+    text-align: left;
+  }
+
+  .timeline-marker {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    margin: 5px 0 0;
+  }
+
+  .timeline-card {
+    grid-column: 2;
+    padding: 20px;
+  }
+
+  .education-block {
+    margin-top: 65px;
+  }
+
+  .education-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .education-date {
+    margin-bottom: 15px;
+  }
+
+  /* Expertise */
+
+  .expertise-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .expertise-card {
+    padding: 23px;
+  }
+
+  .expertise-index {
+    margin-bottom: 20px;
+  }
+
+  .expertise-card p {
+    min-height: 0;
+  }
+
+  /* Projets */
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-featured {
+    grid-column: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .project-featured .project-visual {
+    min-height: 240px;
+  }
+
+  .project-content {
+    padding: 23px;
+  }
+
+  /* Publications */
+
+  .publication-item {
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 26px 0;
+  }
+
+  .publication-year {
+    font-size: .9rem;
+  }
+
+  .publication-details h3 {
+    font-size: 1.15rem;
+  }
+
+  /* Réflexions */
+
+  .reflections-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .reflection-card {
+    min-height: 290px;
+  }
+
+  .reflection-index {
+    margin-bottom: 25px;
+  }
+
+  /* Contact */
+
+  .contact-section {
+    padding: 75px 0;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .contact-copy h2 {
+    font-size: clamp(2.8rem, 11vw, 4rem);
+  }
+
+  .contact-row {
+    grid-template-columns: 75px 1fr;
+    gap: 10px;
+  }
+
+  .footer-inner {
+    min-height: 0;
+    flex-wrap: wrap;
+    padding: 22px 0;
+  }
+}
+
+
+/* =========================================================
+   PETITS MOBILES
+   ========================================================= */
+
+@media (max-width: 400px) {
+  .container {
+    width: calc(100% - 28px);
+  }
+
+  .brand-label {
+    font-size: .54rem;
+  }
+
+  .hero h1 {
+    font-size: 3.8rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .hero-actions .button {
+    width: 100%;
+  }
+
+  .visual-footer {
+    flex-direction: column;
+  }
+
+  .timeline-card {
+    padding: 16px;
+  }
+
+  .card-topline {
+    align-items: flex-start;
+  }
+
+  .contact-row {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================================================
+   ACCESSIBILITÉ : RÉDUCTION DES ANIMATIONS
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
