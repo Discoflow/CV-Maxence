@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="author" content="Maxence Vincent">
+<meta name="description" content="Maxence Vincent, docteur en chimie des matériaux. Ingénieur R&D : caractérisation physicochimique, RMN du solide, catalyse et technologies de l’énergie.">
+<meta property="og:title" content="Maxence Vincent, ingénieur R&D matériaux">
+<meta property="og:description" content="Docteur en chimie des matériaux, spécialisé en RMN du solide et stockage de l’hydrogène.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://discoflow.github.io/CV-Maxence/">
+<title>Maxence Vincent, ingénieur R&D | Matériaux, RMN du solide, hydrogène</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Hanken+Grotesk:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add("js");try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+<script src="script.js" defer></script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Maxence Vincent","jobTitle":"Ingénieur R&D, docteur en chimie des matériaux","email":"mailto:maxence.vincentpro@outlook.com","alumniOf":["Université de Montpellier","Université Claude Bernard Lyon 1"],"knowsAbout":["RMN du solide","Stockage de l’hydrogène","Matériaux poreux","Catalyse"],"url":"https://discoflow.github.io/CV-Maxence/"}
+</script>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="bar">
+  <a class="brand" href="#accueil" aria-label="Maxence Vincent, accueil">Maxence Vincent</a>
+  <nav id="nav" aria-label="Navigation principale">
+    <a href="#parcours">Parcours</a>
+    <a href="#competences">Compétences</a>
+    <a href="#projets">Projets</a>
+    <a href="#publications">Publications</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <button class="icon-btn" id="theme" type="button" aria-label="Changer de thème">◐</button>
+</header>
+
+<main id="contenu">
+<section class="hero" id="accueil">
+  <div class="wrap">
+    <p class="role">Ingénieur R&D · docteur en chimie des matériaux</p>
+    <h1>Je regarde la matière atome par atome, pour qu’elle serve des projets concrets.</h1>
+    <p class="lead">Spécialiste de la RMN du solide et de la caractérisation physicochimique, j’ai consacré ma thèse au stockage chimique de l’hydrogène. Je cherche aujourd’hui un poste de R&D industrielle en matériaux, catalyse ou énergie.</p>
+    <p class="actions">
+      <a class="btn primary" href="#contact">Me contacter</a>
+      <a class="btn" href="#parcours">Voir mon parcours</a>
+      <button class="btn" type="button" id="print">Enregistrer en PDF</button>
+    </p>
+  </div>
+  <figure class="spectrum wrap" aria-label="Spectre schématique dont chaque pic correspond à un thème de recherche">
+    <svg id="spectrum" viewBox="0 0 1000 260" role="img" aria-label="Spectre de RMN schématique avec quatre pics : Al–N–H, hydrogène, MOF, CO₂"></svg>
+    <figcaption>Spectre schématique : chaque pic est un sujet sur lequel j’ai travaillé.</figcaption>
+  </figure>
+  <dl class="facts wrap">
+    <div><dt>Doctorat</dt><dd>2022–2025</dd></div>
+    <div><dt>Publications</dt><dd>3 articles (IJHE)</dd></div>
+    <div><dt>Stages</dt><dd>CEA Grenoble, IEM</dd></div>
+    <div><dt>Langues</dt><dd>Français, anglais C1</dd></div>
+  </dl>
+</section>
+
+<section class="wrap block" id="profil">
+  <h2>Ce qui m’anime</h2>
+  <div class="cols">
+    <p>La recherche m’a appris une méthode : poser une hypothèse, concevoir l’expérience, interpréter les résultats et remettre en question la première lecture quand les données l’exigent.</p>
+    <p>Je veux mettre cette rigueur au service de projets appliqués, avec les équipes de recherche, d’ingénierie et de développement. Je m’intéresse aussi à la finance, à l’économie et à la philosophie, qui offrent d’autres angles pour comprendre les transformations du monde.</p>
+  </div>
+</section>
+
+<section class="wrap block" id="parcours">
+  <h2>Parcours</h2>
+  <ol class="timeline">
+    <li>
+      <time>2022 – 2025</time>
+      <details open>
+        <summary><strong>Doctorat en chimie des matériaux</strong><span>Institut Européen des Membranes, Université de Montpellier</span></summary>
+        <p>Étude de composés Al–N–H dérivés de l’ammonia alane pour le stockage chimique de l’hydrogène : synthèse, caractérisation structurale et mécanismes de thermolyse.</p>
+        <ul>
+          <li>Développement et comparaison de voies de synthèse.</li>
+          <li>Caractérisation par RMN du solide et techniques complémentaires.</li>
+          <li>Analyse des gaz libérés lors du traitement thermique.</li>
+          <li>Travaux sur des matériaux poreux AlCN pour le captage du CO₂.</li>
+        </ul>
+      </details>
+    </li>
+    <li>
+      <time>avr. – sept. 2022</time>
+      <details>
+        <summary><strong>Stage R&D : MOFs pour le stockage de l’hydrogène</strong><span>CEA Grenoble</span></summary>
+        <p>Incorporation de nanoparticules carbonées dans des MOFs pour explorer leurs propriétés d’adsorption de l’hydrogène.</p>
+        <ul>
+          <li>Synthèse de MOF-5, ZIF-8 et MOF-177.</li>
+          <li>Caractérisation par BET, ATG et FTIR.</li>
+          <li>Mesures PCT des propriétés de sorption.</li>
+        </ul>
+      </details>
+    </li>
+    <li>
+      <time>mars – juil. 2021</time>
+      <details>
+        <summary><strong>Stage de recherche : amine-boranes aromatiques</strong><span>Institut Européen des Membranes, Montpellier</span></summary>
+        <p>Étude exploratoire de la synthèse de composés amine-borane aromatiques pour le stockage de l’hydrogène.</p>
+        <ul>
+          <li>Contribution à l’étude de faisabilité de la synthèse.</li>
+          <li>Caractérisation par RMN liquide du bore.</li>
+          <li>Observation de propriétés luminescentes pour certains composés.</li>
+        </ul>
+      </details>
+    </li>
+  </ol>
+  <h3>Formation</h3>
+  <ul class="edu">
+    <li><time>2022 – 2025</time><strong>Doctorat, chimie des matériaux</strong>Université de Montpellier</li>
+    <li><time>2020 – 2022</time><strong>Master, chimie et sciences des matériaux</strong>Université Claude Bernard Lyon 1</li>
+    <li><time>2017 – 2020</time><strong>Licence de chimie</strong>Université de Montpellier</li>
+  </ul>
+</section>
+
+<section class="wrap block" id="competences">
+  <h2>Compétences</h2>
+  <dl class="skills">
+    <div><dt>Synthèse</dt><dd>Al–N–H, MOFs, matériaux poreux, AlCN, broyage, métathèse</dd></div>
+    <div><dt>RMN du solide</dt><dd>MAS, MQMAS, HETCOR, REDOR, traitement avec DMFIT</dd></div>
+    <div><dt>Caractérisation</dt><dd>DRX, XPS, FTIR, MEB-EDX, BET, ATG-MS, GC-MS, PCT</dd></div>
+    <div><dt>Énergie et catalyse</dt><dd>Stockage de H₂, thermolyse, captage du CO₂, mécanismes réactionnels</dd></div>
+    <div><dt>Analyse et communication</dt><dd>Interprétation de données, rédaction d’articles, présentation de résultats</dd></div>
+  </dl>
+</section>
+
+<section class="wrap block" id="projets">
+  <h2>Projets</h2>
+  <div class="projects">
+    <article>
+      <h3>Stockage chimique de l’hydrogène</h3>
+      <p>Synthèse, RMN du solide et thermolyse de composés Al–N–H dérivés de l’ammonia alane.</p>
+      <a href="https://doi.org/10.1016/j.ijhydene.2026.154122" target="_blank" rel="noopener noreferrer">Lire l’article</a>
+    </article>
+    <article>
+      <h3>MOFs et adsorption de l’hydrogène</h3>
+      <p>Effet de nanoparticules carbonées sur les propriétés de sorption de matériaux poreux.</p>
+    </article>
+    <article>
+      <h3>Outils d’analyse financière</h3>
+      <p>Projet personnel en cours : outils Python de visualisation et d’exploration de stratégies quantitatives.</p>
+    </article>
+  </div>
+</section>
+
+<section class="wrap block" id="publications">
+  <h2>Publications</h2>
+  <ol class="pubs">
+    <li><time>2026</time><a href="https://doi.org/10.1016/j.ijhydene.2026.156928" target="_blank" rel="noopener noreferrer">Al–N–H compounds derived from ammonia alane: Solid-state NMR study of dehydrogenation-induced polymeric phases</a><span>Int. J. Hydrogen Energy</span></li>
+    <li><time>2026</time><a href="https://doi.org/10.1016/j.ijhydene.2026.154122" target="_blank" rel="noopener noreferrer">Al–N–H compounds derived from ammonia alane: Synthesis strategies and characterization</a><span>Int. J. Hydrogen Energy</span></li>
+    <li><time>2024</time><a href="https://doi.org/10.1016/j.ijhydene.2024.06.116" target="_blank" rel="noopener noreferrer">Exploring the potential of ammonia alane AlH₃NH₃ as hydrogen carrier</a><span>Int. J. Hydrogen Energy, revue</span></li>
+  </ol>
+</section>
+
+<section class="wrap block contact" id="contact">
+  <h2>Parlons de votre projet</h2>
+  <p>Je suis ouvert aux échanges sur la chimie des matériaux, la recherche appliquée et l’énergie.</p>
+  <p><a class="mail" href="mailto:maxence.vincentpro@outlook.com">maxence.vincentpro@outlook.com</a> · <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+  <form id="form">
+    <label>Votre nom<input name="name" autocomplete="name" required></label>
+    <label>Votre e-mail<input name="email" type="email" autocomplete="email" required></label>
+    <label>Votre message<textarea name="message" rows="4" required></textarea></label>
+    <button class="btn primary" type="submit">Ouvrir dans ma messagerie</button>
+    <p class="note" id="status" aria-live="polite">Le message s’ouvre dans votre logiciel de messagerie ; rien n’est envoyé depuis le site.</p>
+  </form>
+</section>
+</main>
+
+<footer class="wrap foot">
+  <span>© <span id="year">2026</span> Maxence Vincent</span>
+  <a href="#accueil">Haut de page</a>
+</footer>
+</body>
+</html>
